@@ -3,8 +3,8 @@ canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-cx = ctx.canvas.width;
-cy = ctx.canvas.height;
+cx = ctx.canvas.width / 2;
+cy = ctx.canvas.height / 2;
 
 let confetti = [];
 const confettiCount = 300;
@@ -26,8 +26,8 @@ const colors = [
 resizeCanvas = () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  cx = ctx.canvas.width ;
-  cy = ctx.canvas.height ;
+  cx = ctx.canvas.width / 2;
+  cy = ctx.canvas.height / 2;
 };
 
 randomRange = (min, max) => Math.random() * (max - min) + min;
@@ -90,7 +90,7 @@ render = () => {
     ctx.fillStyle = confetto.scale.y > 0 ? confetto.color.front : confetto.color.back;
 
     // Draw confetti
-    ctx.fillRect(-width , -height , width, height);
+    ctx.fillRect(-width / 2, -height / 2, width, height);
 
     // Reset transform matrix
     ctx.setTransform(1, 0, 0, 1, 0, 0);
