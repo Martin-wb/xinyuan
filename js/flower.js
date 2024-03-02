@@ -26,8 +26,8 @@ const colors = [
 resizeCanvas = () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  cx = ctx.canvas.width / 2;
-  cy = ctx.canvas.height / 2;
+  cx = ctx.canvas.width ;
+  cy = ctx.canvas.height ;
 };
 
 randomRange = (min, max) => Math.random() * (max - min) + min;
