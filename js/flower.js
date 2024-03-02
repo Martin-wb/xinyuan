@@ -9,7 +9,7 @@ cy = ctx.canvas.height / 2;
 let confetti = [];
 const confettiCount = 300;
 const gravity = 0.5;
-const terminalVelocity = 5;
+const terminalVelocity = 51;
 const drag = 0.075;
 const colors = [
 { front: 'red', back: 'darkred' },
@@ -90,7 +90,7 @@ render = () => {
     ctx.fillStyle = confetto.scale.y > 0 ? confetto.color.front : confetto.color.back;
 
     // Draw confetti
-    ctx.fillRect(0, 0, width, height);
+    ctx.fillRect(-width / 2, -height / 2, width, height);
 
     // Reset transform matrix
     ctx.setTransform(1, 0, 0, 1, 0, 0);
