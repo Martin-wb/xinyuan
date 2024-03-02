@@ -3,8 +3,8 @@ canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-cx = ctx.canvas.width / 2;
-cy = ctx.canvas.height / 2;
+cx = ctx.canvas.width;
+cy = ctx.canvas.height;
 
 let confetti = [];
 const confettiCount = 300;
