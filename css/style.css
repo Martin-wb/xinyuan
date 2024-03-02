@@ -9,11 +9,20 @@
 } */
 body {
   background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
-  cursor: crosshair;
+  cursor: pointer;
   perspective: 1000px;
   transform-style: preserve-3d;
   font-family: "Pacifico", cursive;
 }
+
+.confetti{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  user-select: none;
+}
+
+
 
 #card-front {
   color: #ffdfdf;
