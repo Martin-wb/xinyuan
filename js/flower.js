@@ -90,7 +90,7 @@ render = () => {
     ctx.fillStyle = confetto.scale.y > 0 ? confetto.color.front : confetto.color.back;
 
     // Draw confetti
-    ctx.fillRect(-width / 2, -height / 2, width, height);
+    ctx.fillRect(-width , -height , width, height);
 
     // Reset transform matrix
     ctx.setTransform(1, 0, 0, 1, 0, 0);
